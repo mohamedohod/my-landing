@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started</title>
+<style>
+:root{--ink:#0E1A3D;--ink-soft:#1C2C5C;--paper:#F6F4EE;--paper-2:#ECE8DC;--signal:#E8A33D;--signal-2:#C97A1A;--line:#D8D2C0;--ok:#2E7D5B;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;}
+section{padding:60px 24px;text-align:center;}
+h1{font-size:clamp(30px,5vw,48px);font-weight:900;margin-bottom:20px;}
+.sub{font-size:18px;color:var(--ink-soft);max-width:480px;margin:0 auto 32px;}
+.btn{display:inline-block;background:var(--signal);color:var(--ink);font-weight:700;font-size:17px;padding:18px 32px;border-radius:10px;border:none;cursor:pointer;box-shadow:0 6px 0 var(--signal-2);}
+.form-row{display:flex;gap:10px;max-width:440px;margin:20px auto;flex-wrap:wrap;justify-content:center;}
+.form-row input{flex:1;min-width:220px;padding:16px 18px;border:1px solid var(--line);border-radius:10px;font-size:15px;}
+footer{text-align:center;padding:24px;font-size:12px;color:var(--ink-soft);}
+</style>
+</head>
+<body>
+  <section>
+    <h1>Get [Your Offer] Now</h1>
+    <p class="sub">[Describe the benefit in one sentence.]</p>
+    <form class="form-row" onsubmit="event.preventDefault(); document.getElementById('msg').style.display='block'; this.style.display='none';">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit" class="btn">Get It Now</button>
+    </form>
+    <p id="msg" style="display:none;color:var(--ok);font-weight:700;">✓ You're in! Check your inbox.</p>
+  </section>
+  <footer>© 2026 Your Brand. All rights reserved.</footer>
+</body>
+</html>
